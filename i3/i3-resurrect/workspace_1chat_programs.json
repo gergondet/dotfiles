@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      "/usr/bin/knotes"
+    ],
+    "working_directory": "/home/gergondet"
+  },
+  {
+    "command": [
+      "/usr/lib/slack/slack"
+    ],
+    "working_directory": "/home/gergondet"
+  },
+  {
+    "command": [
+      "/usr/share/teams/teams",
+      "--disable-namespace-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "working_directory": "/home/gergondet"
+  },
+  {
+    "command": [
+      "/usr/bin/skypeforlinux"
+    ],
+    "working_directory": "/usr/share/skypeforlinux"
+  }
+]

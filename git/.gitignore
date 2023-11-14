@@ -1,0 +1,11 @@
+build/
+build
+.cache/
+compile_commands.json
+*.swp
+*.swo
+imgui.ini
+to-src
+*.pyc
+.ccls-cache/
+.vscode/

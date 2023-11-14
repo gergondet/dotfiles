@@ -1,0 +1,6 @@
+[submodule "polybar/polybar-spotify"]
+	path = polybar/polybar-spotify
+	url = https://github.com/gergondet/polybar-spotify
+[submodule "polybar/polybar-scripts"]
+	path = polybar/polybar-scripts
+	url = https://github.com/gergondet/polybar-scripts

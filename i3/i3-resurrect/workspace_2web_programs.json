@@ -1,0 +1,14 @@
+[
+  {
+    "command": [
+      "/opt/google/chrome/chrome"
+    ],
+    "working_directory": "/home/gergondet"
+  },
+  {
+    "command": [
+      "/opt/google/chrome/chrome"
+    ],
+    "working_directory": "/home/gergondet"
+  }
+]

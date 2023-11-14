@@ -1,0 +1,154 @@
+{
+  "border": "normal",
+  "current_border_width": -1,
+  "floating": "auto_off",
+  "fullscreen_mode": 0,
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "layout": "splith",
+  "marks": [],
+  "name": "1:chat",
+  "orientation": "horizontal",
+  "percent": null,
+  "scratchpad_state": "none",
+  "sticky": false,
+  "type": "workspace",
+  "workspace_layout": "default",
+  "nodes": [
+    {
+      "border": "normal",
+      "current_border_width": -1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "layout": "stacked",
+      "marks": [],
+      "name": null,
+      "orientation": "vertical",
+      "percent": null,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "nodes": [
+        {
+          "border": "none",
+          "current_border_width": 2,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 2560,
+            "y": 42,
+            "width": 1280,
+            "height": 1558
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "ToDo \u2014 KNotes",
+          "orientation": "none",
+          "percent": 0.25,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^knotes$",
+              "instance": "^knotes$"
+            }
+          ]
+        },
+        {
+          "border": "normal",
+          "current_border_width": 2,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 2562,
+            "y": 146,
+            "width": 2556,
+            "height": 1452
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "Hugo Lefevre - idh.lirmm - Slack",
+          "orientation": "none",
+          "percent": 0.25,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^Slack$",
+              "instance": "^slack$"
+            }
+          ]
+        },
+        {
+          "border": "none",
+          "current_border_width": 2,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 2560,
+            "y": 27,
+            "width": 2560,
+            "height": 1573
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "Control team meeting | Microsoft Teams",
+          "orientation": "none",
+          "percent": 0.25,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^Microsoft\\ Teams\\ \\-\\ Preview$",
+              "instance": "^microsoft\\ teams\\ \\-\\ preview$"
+            }
+          ]
+        },
+        {
+          "border": "normal",
+          "current_border_width": 2,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 2562,
+            "y": 146,
+            "width": 2556,
+            "height": 1452
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "Skype",
+          "orientation": "none",
+          "percent": 0.25,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^Skype$",
+              "instance": "^skype$"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
