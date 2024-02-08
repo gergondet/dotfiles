@@ -70,6 +70,13 @@ require('lazy').setup({
       auto_preview = false
     }
   },
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+    lazy = false,
+  },
 })
 
 local lsp = require('lsp-zero').preset({ name = 'recommended' })
@@ -112,20 +119,32 @@ vim.g.formatter_config = {
     cpp = {
       require('formatter.filetypes.cpp').clangformat
     },
-    python = {
-      function() return { exe = "black" } end
-    },
     html = {
-      require('formatter.filetypes.markdown').prettier
-    },
-    markdown = {
       require('formatter.filetypes.markdown').prettier
     },
     json = {
       require('formatter.filetypes.json').prettier
     },
+    markdown = {
+      require('formatter.filetypes.markdown').prettier
+    },
+    python = {
+      require('formatter.filetypes.python').black
+    },
+    rust = {
+      require('formatter.filetypes.rust').rustfmt
+    },
+    sh = {
+      require('formatter.filetypes.sh').shfmt
+    },
+    xml = {
+      require('formatter.filetypes.xml').tidy
+    },
     yaml = {
       require('formatter.filetypes.yaml').prettier
+    },
+    zsh = {
+      require('formatter.filetypes.zsh').beautysh
     },
   }
 }
@@ -395,3 +414,15 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
   command = "lua OpenDiagnosticIfNoFloat()",
   group = "lsp_diagnostics_hold",
 })
+
+-- Toggle current line or with count
+vim.keymap.set('n', '<C-_>', function()
+  return vim.v.count == 0
+      and '<Plug>(comment_toggle_linewise_current)'
+      or '<Plug>(comment_toggle_linewise_count)'
+end, { expr = true })
+-- Toggle in VISUAL mode
+vim.keymap.set('x', '<C-_>', '<Plug>(comment_toggle_linewise_visual)')
+
+-- Always enabled Formatter
+vim.keymap.set('n', '<F3>', ':Format<cr>', { noremap = true, silent = true })

@@ -234,6 +234,8 @@ assign [class="^Google-chrome$"] $ws2
 assign [class="^Choreonoid$"] $ws4
 
 assign [class="^mc_rtc - Magnum based GUI$"] $ws5
+assign [class="^unityhub$"] $ws5
+assign [class="^Unity$"] $ws5
 
 assign [class="^Spotify$"] $ws6
 
@@ -256,6 +258,6 @@ for_window [class="Yad" title="yad-calendar"] floating enable
 bindsym Control+$alt+t exec kitty --class kittyFloating --override remember_window_size=no --override initial_window_width=82c --override initial_window_height=24c
 
 ## Screenshots
-bindsym --release Print exec --no-startup-id maim --select "/home/$USER/Screenshot-$(date +'%Y-%m-%d_%H-%M-%S')"
-bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Screenshot-$(date +'%Y-%m-%d_%H-%M-%S')"
-bindsym Shift+Print exec --no-startup-id maim "/home/$USER/Screenshot-$(date +'%Y-%m-%d_%H-%M-%S')"
+bindsym --release Print exec --no-startup-id maim --select "/home/$USER/Screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
+bindsym Shift+Print exec --no-startup-id maim "/home/$USER/Screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
