@@ -426,3 +426,6 @@ vim.keymap.set('x', '<C-_>', '<Plug>(comment_toggle_linewise_visual)')
 
 -- Always enabled Formatter
 vim.keymap.set('n', '<F3>', ':Format<cr>', { noremap = true, silent = true })
+
+-- Disable LSP logging
+vim.lsp.set_log_level("off")
