@@ -103,6 +103,11 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set('n', 'gD', '<cmd>tab split | lua vim.lsp.buf.declaration()<cr>', { buffer = bufnr })
   vim.keymap.set('n', 'gi', '<cmd>tab split | lua vim.lsp.buf.implementation()<cr>', { buffer = bufnr })
   vim.keymap.set('n', 'go', '<cmd>tab split | lua vim.lsp.buf.type_definition()<cr>', { buffer = bufnr })
+  -- Same as lsp-zero defaults but with f
+  vim.keymap.set('n', 'fd', '<cmd>lua vim.lsp.buf.definition()<cr>', { buffer = bufnr })
+  vim.keymap.set('n', 'fD', '<cmd>lua vim.lsp.buf.declaration()<cr>', { buffer = bufnr })
+  vim.keymap.set('n', 'fi', '<cmd>lua vim.lsp.buf.implementation()<cr>', { buffer = bufnr })
+  vim.keymap.set('n', 'fo', '<cmd>lua vim.lsp.buf.type_definition()<cr>', { buffer = bufnr })
   -- Open references in Telescope instead of scratchpad
   vim.keymap.set('n', 'gR', function() require('telescope.builtin').lsp_references() end,
     { buffer = bufnr, silent = true })
